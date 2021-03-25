@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+
+*{
+
+    /* set the defaults */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Creates the navbar section */
+header{
+
+    background-color:#343838;
+    height: 110px;
+    color: white;
+}
+
+/* The container inside of the navbar */
+.navbar-container{
+
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Fit to 100% of the container */
+}
+
+/* Navbar links */
+header ul{
+
+    display: flex; /* sets the links in a row */
+    list-style-type: none; /* Gets rid of bullet points */
+}
+
+header li a{
+
+    color: white;
+    text-decoration: none; /* Gets rid of underline */
+    padding: 0 15px; /* Add space between links */
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+h2 a{
+
+    font-weight: 600;
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none; /* Gets rid of underline */
+}
+
+
+
+
+
+.showcase{
+
+    background-color: #00B4CC;
+}
+
