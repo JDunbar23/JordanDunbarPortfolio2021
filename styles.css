@@ -15,8 +15,10 @@
 header{
 
     background-color:#343838;
-    height: 110px;
+    height: 70px;
     color: white;
+    position: sticky;
+    top: 0;
 }
 
 /* The container inside of the navbar */
@@ -102,38 +104,100 @@ header li a:hover{
     height: 1200px;
 }
 
-.portfolio-content{
-
-    text-align: center;
-    padding: 40px 0;
-}
-
-.portfolio-content h1{
+.portfolio h1{
 
     font-weight: 800;
     font-size: 5em;
     text-decoration: underline;
     color: #343838;
+    text-align: center;
+    padding: 40px 0;
 }
 
-.portfolio-items{
 
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 10fr));
-    grid-column-gap: 30px;
-    grid-row-gap: 20px;
-    padding: 50px 250px;
-}
 
-.grid-item{
 
-  text-align: center;
-}
 
-.portfolio-items img{
+.portfolio-container{
 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .portfolio-items{
+  
+    position: relative;
+    width: 500px; /* set size of div */
+    margin: 10px 10px;
+  }
+  
+  .portfolio-img{
+  
+    /* fill out the image in a block */
+    display: block; 
+    width: 100%; 
+  }
+  
+  .image-overlay{
+  
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-}
+    height: 100%;
+    background: grey;
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+  
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image-overlay:hover{
+  
+    opacity: 0.8;
+  }
+  
+  .portfolio-title{
+  
+    font-size: 3em;
+  }
+  
+  .portfolio-desc{
+  
+    font-size: 1.4em;
+    margin-top: 1em;
+  }
+  
+  
+  
+  
+  .image-overlay > *{
+  
+    transform: translateY(20px);
+    transition: transform 0.25s;
+  }
+  
+  .image-overlay:hover > *{
+  
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -285,3 +349,6 @@ footer p{
 
     padding-top: 25px;
 }
+
+
+
