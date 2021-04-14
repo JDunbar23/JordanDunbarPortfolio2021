@@ -1,354 +1,531 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
 
+
 *{
 
-    /* set the defaults */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 400;
 }
 
 
-/* -----------------------Header / Navbar Section---------------------------------- */
-/* Creates the navbar section */
-header{
 
-    background-color:#343838;
-    height: 70px;
-    color: white;
-    position: sticky;
-    top: 0;
-}
 
-/* The container inside of the navbar */
-.navbar-container{
+/*-------------------Navbar Section-------------------*/
 
-    width: 70%;
-    margin: 0 auto;
+nav{
+
+    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100%; /* Fit to 100% of the container */
-}
-
-/* Navbar links */
-header ul{
-
-    display: flex; /* sets the links in a row */
-    list-style-type: none; /* Gets rid of bullet points */
-}
-
-header li a{
-
-    color: white;
-    text-decoration: none; /* Gets rid of underline */
-    padding: 0 15px; /* Add space between links */
-    font-weight: 600;
-    font-size: 1.3em;
-}
-
-h2 a{
-
-    font-weight: 600;
-    font-size: 1.5em;
-    color: white;
-    text-decoration: none; /* Gets rid of underline */
-}
-
-header li a:hover{
-
-    text-decoration: underline;
-}
-
-
-
-/* -----------------------Showcase Section---------------------------------- */
-.showcase{
-
-    background-color: #368BC1;
-    height: 650px;
-}
-
-.showcase-content{
-
-    text-align: center;
-    padding: 60px 0;
-}
-
-.showcase-content img{
-
-    width: 20%;
-}
-
-.showcase-content h1{
-
-    font-weight: 800;
-    font-size: 5em;
-    color: white;
-}
-
-.showcase-content p{
-
-    font-weight: 500;
-    font-size: 1.5em;
-    color: white;
-}
-
-
-
-/* -----------------------Portfolio Section---------------------------------- */
-.portfolio{
-
-    background-color: white;
-    height: 1200px;
-}
-
-.portfolio h1{
-
-    font-weight: 800;
-    font-size: 5em;
-    text-decoration: underline;
-    color: #343838;
-    text-align: center;
-    padding: 40px 0;
-}
-
-
-
-
-
-.portfolio-container{
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .portfolio-items{
-  
-    position: relative;
-    width: 500px; /* set size of div */
-    margin: 10px 10px;
-  }
-  
-  .portfolio-img{
-  
-    /* fill out the image in a block */
-    display: block; 
-    width: 100%; 
-  }
-  
-  .image-overlay{
-  
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    background: grey;
+    padding: 40px 100px;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.logo{
+
     color: white;
-    opacity: 0;
-    transition: 0.3s;
-  
-    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links{
+
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .image-overlay:hover{
-  
-    opacity: 0.8;
-  }
-  
-  .portfolio-title{
-  
-    font-size: 3em;
-  }
-  
-  .portfolio-desc{
-  
+}
+
+.nav-links li{
+
+    position: relative;
+    list-style: none;
+}
+
+.nav-links a{
+
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
     font-size: 1.4em;
-    margin-top: 1em;
-  }
-  
-  
-  
-  
-  .image-overlay > *{
-  
-    transform: translateY(20px);
-    transition: transform 0.25s;
-  }
-  
-  .image-overlay:hover > *{
-  
-    transform: translateY(0);
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -----------------------About me Section---------------------------------- */
-.about-me{
-    background-color: #368BC1;
-    height: 670px;
 }
 
-.about-me h1{
+.nav-links a:hover{
 
-    font-weight: 800;
-    font-size: 5em;
-    text-decoration: underline;
-    color: white;
-    text-align: center;
-    padding: 40px 0;
+    color: #3a7ca5;
 }
 
-.about-me-content{
 
-    width: 70%;
-    margin: 0 auto;
+nav.sticky{
+
+    padding: 20px 100px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav.sticky .logo{
+
+    color: #3a7ca5;
+}
+
+nav.sticky ul li a{
+
+    color: black;
+}
+
+
+
+/*-------------------Hero Section-------------------*/
+
+.hero{
+
+    background: url(images/bg.gif);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
     display: flex;
+    background-position: right;
     justify-content: space-between;
     align-items: center;
 }
 
-.about-me-content img{
+.hero div{
 
-    width: 30%;
+    padding: 100px;
 }
 
-.about-me-text{
+.hero h1{
 
-    width: 60%;
-    font-weight: 500;
-    font-size: 1.5em;
-    color: white;
-}
-
-.about-me-text p{
-
-    margin-bottom: 30px;
-}
-
-
-
-/* -----------------------Technologies Section---------------------------------- */
-.technologies{
-
-    background-color: #368BC1;
-    height: 500px;
-    text-align: center;
-    padding: 40px 0;
-}
-
-.technologies h1{
-
-    font-weight: 800;
     font-size: 5em;
-    text-decoration: underline;
+    font-weight: 500;
     color: white;
-    text-align: center;
+    letter-spacing: 2px;
 }
 
-.technologies-items{
+.hero h1 span{
+
+    font-weight: 700;
+}
+
+.hero h3{
+
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+}
+
+span{
+
+    color: #3a7ca5;
+}
+
+
+
+/*-------------------About Me Section-------------------*/
+
+
+.heading{
+
+    width: 100%;
+    text-align: center;
+    color: black; 
+    padding: 100px 0;
+}
+
+.heading h2{
+
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.about .content{
+
+    padding-bottom: 40px;
+}
+
+.content{
 
     display: flex;
-    flex-direction: row;
-    margin: 60px 0;
-}
-
-.technologies-items img{
-
-    width: 60%;
+    justify-content: space-between;
+    padding: 0 150px;
 }
 
 
+.about .contentBx p{
 
-/* -----------------------Contact me Section---------------------------------- */
-.contact{
-
-    background-color: white;
-    height: 400px;
-    text-align: center;
-    padding: 40px 0;
+    font-size: 1.8em;
 }
 
-.contact h1{
 
-    font-weight: 800;
-    font-size: 5em;
-    text-decoration: underline;
-    color: #343838;
+
+.contentBx{
+
+    padding-top: 80px;
 }
 
-.contact p{
+.width50{
 
-    font-weight: 500;
-    font-size: 1.5em;
-    color: #343838;
-    margin-top: 8px;
+    min-width: 50%;
 }
 
-.contact-items{
+.width50 img{
+
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+
+
+/*-------------------Portfolio Section-------------------*/
+
+.work{
+
+    background-color: #111;
+    /*height: 140vh;*/
+}
+
+.work .heading{
+
+    color: white;
+}
+
+.work .content{
 
     display: flex;
     justify-content: center;
-    max-width: 300px;
-    margin-left: 800px;
-    padding-top: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
 }
 
-.contact-items img{
+.work .content .workBx{
 
-    width: 70%;
+    /* Adjust img box size and padding*/
+    max-width: 500px;
+    padding: 10px;
 }
 
-#email:hover{
+.workBx img{
 
-    opacity: 50%;
-}
-
-#link:hover{
-
-    opacity: 50%;
-}
-
-#github:hover{
-
-    opacity: 50%;
+    max-width: 100%;
 }
 
 
+/*-------------------Services Section-------------------*/
 
-/* -----------------------Footer---------------------------------- */
-footer{
+.services{
 
-    background-color:#343838;
-    height: 80px;
+    background-color: white;
+    /*height: 100vh;*/
+}
+
+.services .heading{
+
+    color: black;
+}
+
+.services .content{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.services .servicesBx{
+
+    background-color: #222;
+    padding: 40px 20px;
+    max-width: 340px;
     color: white;
     text-align: center;
+    margin: 20px; /* seperates each section */
+    transition: 0.5s;
+}
+
+.services .servicesBx img{
+
+    width: 40%;
+    filter: invert(1); /* turn icons white */
+}
+
+.services .servicesBx h2{
+
     font-weight: 500;
-    font-size: 1.2em;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.services .servicesBx p{
+
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.services .servicesBx:hover{
+
+    background-color: #3a7ca5;
+}
+
+
+
+/*-------------------Contact Section-------------------*/
+
+.contact{
+
+    background-color: #111;
+    /*height: 120vh;*/
+}
+
+.contact .content{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .heading{
+
+    color: white;
+}
+
+.formBx{
+
+    min-width: 60%;
+}
+
+.formBx form{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx h3{
+
+    color: white;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.formBx input,
+.formBx textarea{
+
+    font-size: 1.4em;
+    padding: 10px; /* add space inside the input fields*/
+    margin-bottom: 10px;
+    background-color: #222;
+    color: white;
+    border: none;
+    resize: none; /* stop text area from being manually resized */
+}
+
+.formBx input[type="submit"]{
+
+    max-width: 200px;
+    cursor: pointer;
+    background-color: #3a7ca5;
+}
+
+
+
+.social-media{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.socialBx{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 200px; 
+    
+}
+
+.socialBx img{
+
+    max-width: 100%;
+    filter: invert(1);
+}
+
+.socialBx a{
+
+    margin: 0 10px;
+    margin-top: 70px;
+}
+
+.socialBx a:hover{
+
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+
+/*-------------------Footer Section-------------------*/
+
+footer{
+
+    background-color: #3a7ca5;
+    color: white;
+    height: 50px;
 }
 
 footer p{
 
-    padding-top: 25px;
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 5px;
 }
+
+
+
+/*-------------------RESPONSIVENESS-------------------*/
+
+@media (max-width: 991px){
+
+    nav,
+    nav.sticky{
+
+        padding: 20px 50px;
+        z-index: 100;
+    }
+
+    .nav-links{
+
+        position: fixed;
+        top: 85px; /* set top of menu from navbar */
+        right: -100%; /* set menu off to the right */
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        transition: 0.5s;
+        background-color: white;
+        padding: 100px 50px;
+        z-index: 99;
+        border-top: 1px solid black;
+    }
+
+    .nav-links.active{
+
+        right: 0; /* set menu back on webpage */
+    }
+
+    .nav-links a{
+
+        color: black;
+        font-size: 2em;
+        margin: 50px 0;
+    }
+
+    .toggle{
+
+        /* create the toggle icon */
+        background: url(images/hamburger.png);
+        height: 30px;
+        width: 30px;      
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active{
+
+        /* create the close icon */
+        background: url(images/close.png);
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    nav.sticky .toggle{
+
+        filter: invert(1);
+    }
+
+    
+    .hero{
+
+        padding: 20px 0px;
+    }
+
+    .hero h1{
+
+        font-size: 2.5em;
+    }
+
+    .hero h3{
+
+        font-size: 2em;
+    }
+
+    .heading h2{
+
+        font-size: 2em;
+    }
+
+    .content{
+
+        flex-direction: column;
+    }
+
+    .width50{
+
+        margin-bottom: 20px;
+    }
+
+    .work .content .workBx{
+
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 600px){
+
+    nav,
+    nav.sticky{
+
+        padding: 20px 20px;
+    }
+
+    .hero{
+
+        padding: 20px 0px;
+    }
+
+    .about .contentBx p{
+
+        font-size: 1em;
+    }
+}
+
+
+
+
 
 
 
