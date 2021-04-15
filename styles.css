@@ -111,11 +111,13 @@ nav.sticky ul li a{
     font-weight: 500;
     color: white;
     letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .hero h1 span{
 
     font-weight: 700;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 .hero h3{
@@ -124,6 +126,7 @@ nav.sticky ul li a{
     font-weight: 500;
     color: white;
     letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
 span{
@@ -247,29 +250,32 @@ span{
   
   
   .container .box .details{
-  
+
+    /* set position and leave space around */
     position: absolute;
     top: 10px;
     bottom: 10px;
     left: 10px;
     right: 10px;
+
     background-color: rgba(0,0,0,0.8);
-    transform: scaleY(0);
+    transform: scaleY(0); /* closes the detail box */
     transition: 0.5s;
   }
   
   .container .box:hover .details{
   
-    transform: scaleY(1);
+    transform: scaleY(1); /* opens the detail box */
   }
   
   .container .box .details .content{
-  
+
+    /* centres content inside details box */ 
     position: absolute;
     color: white;
     top: 50%;
-    text-align: center;
     transform: translateY(-50%);
+    text-align: center;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -281,7 +287,7 @@ span{
     margin: 0;
     padding: 0;
     font-size: 2em;
-    color: yellow;
+    color: #3a7ca5;
   }
   
   .container .box .details .content p{
@@ -403,11 +409,15 @@ span{
     resize: none; /* stop text area from being manually resized */
 }
 
-.formBx input[type="submit"]{
+.formBx button{
 
     max-width: 200px;
+    height: 40px;
+    font-size: 1.2em;
     cursor: pointer;
     background-color: #3a7ca5;
+    color: white;
+    outline: none;
 }
 
 
@@ -569,6 +579,14 @@ footer p{
 
         width: 100%;
         padding: 10px;
+    }
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+        margin: 0 auto;
     }
 }
 
