@@ -1,0 +1,869 @@
+
+
+<nav>
+        <a href="" class="logo">JORDAN DUNBAR</a>
+
+        <div class="toggle" onclick="toggleMenu();"></div>
+
+        <ul class="nav-links">
+            <li><a href="#about" onclick="toggleMenu();">About Me</a></li>
+            <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+            <li><a href="Jordan_DunbarCV.pdf" download="">My CV</a></li>
+        </ul>
+    </nav>
+
+
+
+    <section class="hero">
+        <div>
+            <h1>Hello, my name is<br><span>Jordan Dunbar.</span></h1>
+            <h3>I'm a <span class="type"></span></h3>
+        </div>
+    </section>
+
+
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>ABOUT ME</h2>
+        </div>
+
+        <div class="content">
+            <div class="width50">
+                <img src="images/jordan-01.jpg" alt="" srcset="">
+            </div>
+
+            <div class="contentBx width50">
+                <p>Since I was young I have always been interested in computers and technology. I spent a lot of my youth messing with computers, 
+                    either by taking them apart or discovering what I could do within the OS.<br>
+                    Years later I have learned to not only build computers but create websites, data analysis projects and other apps.<br>
+                    I previously worked as a Design Engineer for Linbrooke Services and Siemens in their railway industry, so I am no stranger to completing big projects.<br>
+                    I'm always learning how to create new software and looking to improve my skills as a software developer.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="work" id="portfolio">
+        <div class="heading">
+            <h2>PORTFOLIO</h2>
+        </div>
+
+        <div class="container">
+
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/Glasgow.jpg" alt="">
+              </div>
+        
+              <div class="details">
+                <div class="content">
+                  <h2>Portfolio 1</h2>
+                  <p>I built this app using HTML, CSS and Javascript.</p>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/Glasgow.jpg" alt="">
+              </div>
+        
+              <div class="details">
+                <div class="content">
+                  <h2>Portfolio 1</h2>
+                  <p>I built this app using HTML, CSS and Javascript.</p>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/Glasgow.jpg" alt="">
+              </div>
+        
+              <div class="details">
+                <div class="content">
+                  <h2>Portfolio 1</h2>
+                  <p>I built this app using HTML, CSS and Javascript.</p>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/Glasgow.jpg" alt="">
+              </div>
+        
+              <div class="details">
+                <div class="content">
+                  <h2>Portfolio 1</h2>
+                  <p>I built this app using HTML, CSS and Javascript.</p>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/Glasgow.jpg" alt="">
+              </div>
+        
+              <div class="details">
+                <div class="content">
+                  <h2>Portfolio 1</h2>
+                  <p>I built this app using HTML, CSS and Javascript.</p>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="box">
+              <div class="imgBox">
+                <img src="images/Glasgow.jpg" alt="">
+              </div>
+        
+              <div class="details">
+                <div class="content">
+                  <h2>Portfolio 1</h2>
+                  <p>I built this app using HTML, CSS and Javascript.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <section class="services" id="services">
+        <div class="heading">
+            <h2>SERVICES</h2>
+        </div>
+
+        <div class="content">
+            <div class="servicesBx">
+                <img src="images/webIcon.png" alt="">
+                <h2>Web Development</h2>
+                <p>I can create beautiful responsive websites using HTML, CSS and Javascript. I am also currently learning React JS and ASP.Net.</p>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/databaseIcon.png" alt="">
+                <h2>Database Management</h2>
+                <p>I can connect databases to websites and modify the data within them using SQL. I mainly use MySQL and SQL Server.</p>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/supportIcon.png" alt="">
+                <h2>IT Support</h2>
+                <p>I can build and troubleshoot computer systems, regardless if it is a hardware or software issue.</p>
+            </div>
+
+            <div class="servicesBx">
+                <img src="images/gameIcon.png" alt="">
+                <h2>Game Development</h2>
+                <p>Using Unity and C# I can create any type of game, for example platformers, first person shooters or survival games.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>CONTACT ME</h2>
+        </div>
+
+        <div class="content">
+            <div class="formBx">
+                <form action="https://formsubmit.co/JordanDunbar23@gmail.com" method="POST">
+                    <h3>Message Me</h3>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea type="text" name="message" id="" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+                    <!--<input type="email" name="email" value="SEND MESSAGE">-->
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <div class="socialBx">
+                <a href="https://github.com/JDunbar23"><img src="images/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/jordandunbar23/"><img src="images/link.png" alt=""></a>
+                <a href="mailto:JordanDunbar23@gmail.com"><img src="images/email.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Jordan Dunbar</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+
+        let typed = new Typed('.type', {
+
+            strings: ["Software Developer.", "Game Developer.", "IT Technician."], typeSpeed: 40, backSpeed: 80, loop: true
+        });
+
+    </script>
+
+
+
+------------------------------------------------
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&display=swap');
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    scroll-behavior: smooth;
+    font-weight: 400;
+}
+
+
+
+
+/*-------------------Navbar Section-------------------*/
+
+nav{
+
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+.logo{
+
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-links{
+
+    position: relative;
+    display: flex;
+}
+
+.nav-links li{
+
+    position: relative;
+    list-style: none;
+}
+
+.nav-links a{
+
+    position: relative;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.4em;
+}
+
+.nav-links a:hover{
+
+    color: #3a7ca5;
+}
+
+
+nav.sticky{
+
+    padding: 20px 100px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+nav.sticky .logo{
+
+    color: #3a7ca5;
+}
+
+nav.sticky ul li a{
+
+    color: black;
+}
+
+
+
+/*-------------------Hero Section-------------------*/
+
+.hero{
+
+    background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/Glasgow.jpg);
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background-position: right;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero div{
+
+    padding: 100px;
+}
+
+.hero h1{
+
+    font-size: 5em;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero h1 span{
+
+    font-weight: 700;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+.hero h3{
+
+    font-size: 3em;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+span{
+
+    color: #3a7ca5;
+}
+
+
+
+/*-------------------About Me Section-------------------*/
+
+
+.heading{
+
+    width: 100%;
+    text-align: center;
+    color: black; 
+    padding: 100px 0;
+}
+
+.heading h2{
+
+    font-size: 4em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.about .content{
+
+    padding-bottom: 40px;
+}
+
+.content{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+
+.about .contentBx p{
+
+    font-size: 1.8em;
+}
+
+
+
+.contentBx{
+
+    padding-top: 80px;
+}
+
+.width50{
+
+    min-width: 50%;
+}
+
+.width50 img{
+
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+
+
+/*-------------------Portfolio Section-------------------*/
+
+.work{
+
+    background-color: #111;
+    /*height: 140vh;*/
+}
+
+.work .heading{
+
+    color: white;
+}
+
+.container{
+
+    width: 1260px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    padding-bottom: 50px;
+  }
+  
+  
+  .container .box{
+  
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    margin: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+  }
+  
+  
+  .container .box .imgBox{
+  
+    position: relative;
+    overflow: hidden; /* prevents image spilling out of div */
+  }
+  
+  .container .box .imgBox img{
+  
+    height: 400px;
+    width: 400px;
+    transition: 1s;
+    object-fit: cover;
+  }
+  
+  .container .box:hover .imgBox img{
+  
+    transform: scale(1.2);
+  }
+  
+  
+  .container .box .details{
+
+    /* set position and leave space around */
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+
+    background-color: rgba(0,0,0,0.8);
+    transform: scaleY(0); /* closes the detail box */
+    transition: 0.5s;
+  }
+  
+  .container .box:hover .details{
+  
+    transform: scaleY(1); /* opens the detail box */
+  }
+  
+  .container .box .details .content{
+
+    /* centres content inside details box */ 
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .container .box .details .content h2{
+  
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    color: #3a7ca5;
+  }
+  
+  .container .box .details .content p{
+  
+    margin: 10px 0;
+    padding: 0;
+    font-size: 1.2em;
+  }
+
+
+
+/*-------------------Services Section-------------------*/
+
+.services{
+
+    background-color: white;
+    /*height: 100vh;*/
+}
+
+.services .heading{
+
+    color: black;
+}
+
+.services .content{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 30px;
+}
+
+.services .servicesBx{
+
+    background-color: #222;
+    padding: 40px 20px;
+    max-width: 340px;
+    color: white;
+    text-align: center;
+    margin: 20px; /* seperates each section */
+    transition: 0.5s;
+}
+
+.services .servicesBx img{
+
+    width: 40%;
+    filter: invert(1); /* turn icons white */
+}
+
+.services .servicesBx h2{
+
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.services .servicesBx p{
+
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+.services .servicesBx:hover{
+
+    background-color: #3a7ca5;
+}
+
+
+
+/*-------------------Contact Section-------------------*/
+
+.contact{
+
+    background-color: #111;
+    /*height: 120vh;*/
+}
+
+.contact .content{
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contact .heading{
+
+    color: white;
+}
+
+.formBx{
+
+    min-width: 60%;
+}
+
+.formBx form{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.formBx h3{
+
+    color: white;
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.formBx input,
+.formBx textarea{
+
+    font-size: 1.4em;
+    padding: 10px; /* add space inside the input fields*/
+    margin-bottom: 10px;
+    background-color: #222;
+    color: white;
+    border: none;
+    resize: none; /* stop text area from being manually resized */
+}
+
+.formBx button{
+
+    max-width: 200px;
+    height: 40px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #3a7ca5;
+    color: white;
+    outline: none;
+}
+
+
+
+.social-media{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+}
+
+.socialBx{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 200px; 
+    
+}
+
+.socialBx img{
+
+    max-width: 100%;
+    filter: invert(1);
+}
+
+.socialBx a{
+
+    margin: 0 10px;
+    margin-top: 70px;
+}
+
+.socialBx a:hover{
+
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+
+/*-------------------Footer Section-------------------*/
+
+footer{
+
+    background-color: #3a7ca5;
+    color: white;
+    height: 50px;
+}
+
+footer p{
+
+    font-size: 1.5em;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 5px;
+}
+
+
+
+/*-------------------RESPONSIVENESS-------------------*/
+
+@media (max-width: 991px){
+
+    nav,
+    nav.sticky{
+
+        padding: 20px 50px;
+        z-index: 100;
+    }
+
+    .nav-links{
+
+        position: fixed;
+        top: 85px; /* set top of menu from navbar */
+        right: -100%; /* set menu off to the right */
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        transition: 0.5s;
+        background-color: white;
+        padding: 100px 50px;
+        z-index: 99;
+        border-top: 1px solid black;
+    }
+
+    .nav-links.active{
+
+        right: 0; /* set menu back on webpage */
+    }
+
+    .nav-links a{
+
+        color: black;
+        font-size: 2em;
+        margin: 50px 0;
+    }
+
+    .toggle{
+
+        /* create the toggle icon */
+        background: url(images/hamburger.png);
+        height: 30px;
+        width: 30px;      
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    .toggle.active{
+
+        /* create the close icon */
+        background: url(images/close.png);
+        height: 30px;
+        width: 30px;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+
+    nav.sticky .toggle{
+
+        filter: invert(1);
+    }
+
+    
+    .hero{
+
+        padding: 20px 0px;
+    }
+
+    .hero h1{
+
+        font-size: 2.5em;
+    }
+
+    .hero h3{
+
+        font-size: 2em;
+    }
+
+    .heading h2{
+
+        font-size: 2em;
+    }
+
+    .content{
+
+        flex-direction: column;
+    }
+
+    .width50{
+
+        margin-bottom: 20px;
+    }
+
+    .work .content .workBx{
+
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container{
+
+        display: flex;
+        flex-direction: column;
+        width: 430px;
+        margin: 0 auto;
+    }
+}
+
+
+@media (max-width: 600px){
+
+    nav,
+    nav.sticky{
+
+        padding: 20px 20px;
+    }
+
+    .hero{
+
+        padding: 20px 0px;
+    }
+
+    .about .contentBx p{
+
+        font-size: 1em;
+    }
+}
+
+
+
+
+
+
+
+----------------------------------------------
+
+
+
+
+// set the variables
+const menuToggle = document.querySelector('.toggle');
+const menu = document.querySelector('.nav-links');
+
+function toggleMenu(){
+
+    menuToggle.classList.toggle('active');
+    menu.classList.toggle('active');
+}
+
+
+window.addEventListener('scroll', () => { // listen for the webpage being scrolled vertically
+
+    let nav = document.querySelector('nav'); // set a variable called header as our html header element
+
+    nav.classList.toggle('sticky', window.scrollY > 0); // when web page is scrolled down we attach the class "sticky" to the header
+})
