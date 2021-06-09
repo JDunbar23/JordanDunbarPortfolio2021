@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jordan Dunbar</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">JORDAN DUNBAR</a>
+
+        <div class="toggle" onclick="toggleMenu();"></div>
+
+        <ul class="nav-links">
+            <li><a href="index.html#about" onclick="toggleMenu();">About Me</a></li>
+            <li><a href="index.html#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+            <li><a href="index.html#services" onclick="toggleMenu();">Services</a></li>
+            <li><a href="index.html#contact" onclick="toggleMenu();">Contact</a></li>
+            <li><a href="Jordan-CV.pdf" download="">My CV</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="contact">
+        <div class="heading">
+            <h2> </h2>
+        </div>
+
+        <div class="content">
+            <video width="1280" height="720" controls>
+                <source src="videos/Pirates-Trailer-1.m4v" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>CONTACT ME</h2>
+        </div>
+
+        <div class="content">
+            <div class="formBx">
+                <form action="https://formsubmit.co/JordanDunbar23@gmail.com" method="POST">
+                    <h3>Message Me</h3>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea type="text" name="message" id="" cols="30" rows="10" placeholder="Enter your message" required></textarea>
+                    <!--<input type="email" name="email" value="SEND MESSAGE">-->
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="social-media">
+            <div class="socialBx">
+                <a href="https://github.com/JDunbar23"><img src="images/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/jordandunbar23/"><img src="images/link.png" alt=""></a>
+                <a href="mailto:JordanDunbar23@gmail.com"><img src="images/email.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by Jordan Dunbar</p>
+    </footer>
+
+
+    <script src="index.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    
+</body>
+
+
+</html>
